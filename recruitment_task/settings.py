@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'rest_framework'
+    'rest_framework',
+    'recruitment_task.table_builder',
 ]
 
 MIDDLEWARE = [
@@ -79,10 +80,6 @@ WSGI_APPLICATION = 'recruitment_task.wsgi.application'
 database_url = urlparse(os.environ.get('DATABASE_URL'))
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': database_url.path[1:],
@@ -92,7 +89,6 @@ DATABASES = {
         'PORT': database_url.port,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
