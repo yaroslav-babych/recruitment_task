@@ -27,7 +27,6 @@ The following endpoints are available for this application:
 | api/table/                           | POST        | Create a new table (schema) in the database       |
 | api/table/{id}/                      | GET         | Retrieve a specific table (schema) in the database|
 | api/table/{id}/                      | PUT         | Update a specific table (schema) in the database  |
-| api/table/{id}/                      | DELETE      | Delete a specific table (schema) in the database  |
 | api/table/{id}/add_row/              | POST        | Add a new row to a specific table (schema)         |
 | api/table/{id}/get_rows/             | GET         | Retrieve all rows of a specific table (schema)     |
 
